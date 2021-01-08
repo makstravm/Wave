@@ -74,7 +74,7 @@ body {
 }
 
 .menu__btn {
-  display: block;
+  display: none;
   width: 80px;
   height: 80px;
   padding: 0;
@@ -958,7 +958,7 @@ ul.services__item-list {
     line-height: 24px;
   }
   .menu__btn {
-    display: flex;
+    display: block;
   }
   body.header {
     position: relative;
