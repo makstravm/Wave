@@ -5,7 +5,7 @@ $(function() {
 
   });
 
-  $(".menu a").on("click", function(event) {
+  $(".menu a, .logo, .footer__link").on("click", function(event) {
     event.preventDefault();
     var id = $(this).attr('href'),
       top = $(id).offset().top;
