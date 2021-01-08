@@ -13,38 +13,49 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body id="body">
   <header class="header">
+    <div class="header__top">
+      <a class="logo" href="#body">
+        <img src="images/logo.svg" alt="Логотип">
+      </a>
+      <nav class="menu">
+        <ul class="menu__list">
+          <li class="menu__list-item">
+            <a class="menu__list-link" href="#about">О нас</a>
+          </li>
+          <li class="menu__list-item">
+            <a class="menu__list-link" href="#receive">Услуги</a>
+          </li>
+          <li class="menu__list-item">
+            <a class="menu__list-link" href="#price">Стоимость</a>
+          </li>
+          <li class="menu__list-item">
+            <a class="menu__list-link" href="#blog">Блог</a>
+          </li>
+          <li class="menu__list-item">
+            <a class="menu__list-link" href="#team">Команда</a>
+          </li>
+          <li class="menu__list-item">
+            <a class="menu__list-link" href="#contact">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <button class="menu__btn">
+        <svg class="menu__btn-svg" viewBox="00 00 100 100" width="100">
+          <path
+                class="menu__btn-line menu__btn-top"
+                d="m 70,33 h -40 c 0,0 -8.5,-0.149796 -8.5,8.5 0,8.649796 8.5,8.5 8.5,8.5 h 20 v -20" />
+          <path
+                class="menu__btn-line menu__btn-middle"
+                d="m 70,50 h -40" />
+          <path
+                class="menu__btn-line menu__btn-bottom"
+                d="m 30,67 h 40 c 0,0 8.5,0.149796 8.5,-8.5 0,-8.649796 -8.5,-8.5 -8.5,-8.5 h -20 v 20" />
+        </svg>
+      </button>
+    </div>
     <div class="container">
-      <div class="header__top">
-        <a class="logo" href="#">
-          <img src="images/logo.svg" alt="Логотип">
-        </a>
-        <nav class="menu">
-          <ul class="menu__list">
-            <li class="menu__list-item">
-              <a class="menu__list-link" href="#">О нас</a>
-            </li>
-            <li class="menu__list-item">
-              <a class="menu__list-link" href="#">Услуги</a>
-            </li>
-            <li class="menu__list-item">
-              <a class="menu__list-link" href="#">Стоимость</a>
-            </li>
-            <li class="menu__list-item">
-              <a class="menu__list-link" href="#">Блог</a>
-            </li>
-            <li class="menu__list-item">
-              <a class="menu__list-link" href="#">Команда</a>
-            </li>
-            <li class="menu__list-item">
-              <a class="menu__list-link" href="#">Контакты</a>
-            </li>
-          </ul>
-        </nav>
-        <button class="menu__btn"><span></span>
-        </button>
-      </div>
       <div class="header__content">
         <div class="header__text">
           <h1 class="header__title">WAWE</h1>
@@ -54,7 +65,7 @@
       </div>
     </div>
   </header>
-  <section class="about">
+  <section class="about" id="about">
     <div class="container">
       <h2 class="title about__title">
         <span>О ШКОЛЕ, О СЕРФИНГЕ, О КАНАРАХ </span>
@@ -92,7 +103,7 @@
     </div>
     </div>
   </section>
-  <section class="receive">
+  <section class="receive" id="receive">
     <div class="container">
       <h2 class="title receive__title">
         <span>
@@ -228,7 +239,7 @@
     <div class="container">
       <div class="gallery__video">
         <img class="gallery__video-img" src="images/video-bg.jpg" alt="video bg-img">
-        <a class="video__play" data-fancybox href="https://youtu.be/kFjETSa9N7A">
+        <a class="video__play" data-fancybox href="https://youtu.be/0l6jChlEi0U">
           <img src="images/video-play.svg" alt="play icon">
         </a>
       </div>
@@ -240,7 +251,7 @@
       </div>
     </div>
   </section>
-  <section class="blog">
+  <section class="blog" id="blog">
     <h2 class="title blog__title"><span>БЛОГ</span></h2>
     <div class="blog__wrapper">
       <div class="container">
@@ -319,7 +330,7 @@
       </div>
     </div>
   </section>
-  <section class="team">
+  <section class="team" id="team">
     <div class="container">
       <h2 class="title team__title">
         <span>НАША КОМАНДА</span>
@@ -343,7 +354,7 @@
       </div>
     </div>
   </section>
-  <section class="services">
+  <section class="services" id="price">
     <div class="container">
       <h2 class="title services__title">
         <span>ПАКЕТЫ УСЛУГ</span>
@@ -448,7 +459,7 @@
     </div>
   </section>
   <div class="map"><img src="images/map.jpg" alt=""></div>
-  <section class="connection">
+  <section class="connection" id="contact">
     <h2 class="title connection__title"><span>ОСТАВИТЬ ЗАЯВКУ</span></h2>
     <div class="container">
       <div class="connection__inner">
@@ -485,7 +496,7 @@
     </div>
   </section>
   <footer class="footer">
-    <img class="footer__logo" src="images/logo-footer.svg" alt="footer logo">
+    <a class="footer__link" href="#body"><img class="footer__logo" src="images/logo-footer.svg" alt="footer logo"></a>
   </footer>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js ">
