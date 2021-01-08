@@ -82,8 +82,8 @@ body {
   background-color: transparent;
   cursor: pointer;
   position: absolute;
-  top: 00px;
-  right: 00px;
+  top: -10px;
+  right: 10px;
 }
 
 .menu__btn-svg {
@@ -99,7 +99,7 @@ body {
   fill: none;
   transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
   stroke: #fff;
-  stroke-width: 5.5;
+  stroke-width: 4.5;
   stroke-linecap: round;
 }
 
