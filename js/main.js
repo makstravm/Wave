@@ -1,11 +1,11 @@
-$(function() {
+$(function () {
 
-  $('.menu__btn, .menu a').on('click', function() {
+  $('.menu__btn, .menu a').on('click', function () {
     $('.header').toggleClass('header-active');
 
   });
 
-  $(".menu a, .logo, .footer__link").on("click", function(event) {
+  $(".menu a, .logo, .footer__link, .go-top").on("click", function (event) {
     event.preventDefault();
     var id = $(this).attr('href'),
       top = $(id).offset().top;
@@ -19,5 +19,14 @@ $(function() {
     dots: true,
     arrows: false,
 
+  });
+
+  $(window).scroll(function () {
+    var scroll = $(window).scrollTop();
+    if (scroll >= 100) {
+      $(".header__top, .go-top").addClass("--active");
+    } else {
+      $(".header__top, .go-top").removeClass("--active");
+    }
   });
 });
